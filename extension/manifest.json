@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "PrivacyShield",
+  "version": "1.0",
+  "description": "Analyze privacy policies and trackers on the current website.",
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PrivacyShield Analyze"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

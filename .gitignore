@@ -1,0 +1,44 @@
+# Python / Django
+__pycache__/
+*.pyc
+.venv/
+backend/.venv/
+
+# Env files
+.env
+.env.*
+*.env
+
+# Local DB and data
+db.sqlite3
+backend/db.sqlite3
+*.sqlite3
+
+# Logs
+*.log
+
+# Node / React
+node_modules/
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.vite/
+
+# Optional: ML artifacts (recommended to ignore)
+backend/ps_core/ml/artifacts/
+*.joblib
+
+# Local scan outputs
+secret_files.txt
+secrets_scan_*.txt
+secrets_filtered*.txt
+
+# Project docs not for GitHub
+PLAN.md
+SPEC.md
+PrivacyShield_Report_Demo_Format.docx
+
+# OS / IDE junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

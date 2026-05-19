@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">🛡️ PrivacyShield</div>
+    </header>
+
+    <div class="content">
+      <button id="analyze-btn" class="btn primary">Analyze Current Site</button>
+      
+      <div id="status-area" class="status-hidden">
+        <p id="status-msg">Loading...</p>
+      </div>
+
+      <div id="result-area" class="result-hidden">
+        <div class="score-card">
+          <div class="score-header">
+            <h3>Privacy Score</h3>
+            <span id="severity-badge" class="badge">Medium</span>
+          </div>
+          <div class="score-circle">
+            <h1 id="score-text">--</h1>
+            <p>/100</p>
+          </div>
+        </div>
+
+        <div class="findings-section">
+          <h4>Top Risk Factors</h4>
+          <ul id="reasons-list"></ul>
+        </div>
+
+        <div class="findings-section">
+          <h4>Recommendations</h4>
+          <ul id="recs-list"></ul>
+        </div>
+
+        <div class="findings-section" id="cookie-risk-section">
+          <h4>Cookie Risks</h4>
+          <p id="cookie-risk-text" style="font-size: 0.85rem; margin-top: 4px; color: var(--text-dark); margin-bottom: 0px;"></p>
+        </div>
+
+        <div class="findings-section" id="consent-banner-section">
+          <h4>Consent Banner</h4>
+          <p id="consent-status-text" style="font-size: 0.85rem; margin-top: 4px; color: var(--text-dark); margin-bottom: 0px;"></p>
+        </div>
+
+        <div class="raw-data-section">
+          <div class="secondary-actions">
+            <button id="toggle-json-btn" class="btn secondary">View Raw JSON</button>
+            <button id="copy-json-btn" class="btn secondary">Copy JSON</button>
+            <span id="copy-status"></span>
+          </div>
+          <pre id="raw-json" class="json-hidden"></pre>
+        </div>
+      </div>
+      
+      <div id="error-area" class="error-hidden">
+        <p><strong>Error:</strong> <span id="error-text"></span></p>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
