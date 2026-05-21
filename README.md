@@ -101,12 +101,6 @@ VITE_API_BASE=http://127.0.0.1:8000
 3. Click the **PrivacyShield** extension icon
 4. Click **Analyze Current Site**
 5. Popup shows score, severity, top reasons, cookie risk counts, and consent banner info
-
-### Recommended safe demo sites
-- `https://about.gitlab.com`
-- `https://www.mozilla.org`
-- `https://foundation.wikimedia.org`
-
 ---
 
 # Key API Endpoints
